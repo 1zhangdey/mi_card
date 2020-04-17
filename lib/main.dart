@@ -31,37 +31,39 @@ class Myapp extends StatelessWidget {
               style: TextStyle(fontSize: 25, color: Colors.white),
             ),
             Center(
-              child: Container(
-                padding: EdgeInsets.all(10),
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(Icons.add_location, size: 40),
-                    Text(
-                      "Milton Ontario, Canada",
-                      style: TextStyle(fontSize: 15, color: Colors.black),
-                    ),
-                  ],
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Card(
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  color: Colors.white,
+                  child: Row(
+                    children: <Widget>[
+                      Icon(Icons.add_location, size: 40),
+                      Text(
+                        "Milton Ontario, Canada",
+                        style: TextStyle(fontSize: 15, color: Colors.black),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
             Center(
-              child: Container(
-                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                color: Colors.white,
-                padding: EdgeInsets.all(10),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Card(
+                  margin: EdgeInsets.symmetric(vertical: 5, horizontal: 25),
+                  color: Colors.white,
+                  child: ListTile(
+                    leading: Icon(
                       Icons.email,
-                      size: 37,
+                      color: Colors.teal,
                     ),
-                    Text(
-                      " deyizhang2003@gmail.com",
+                    title: Text(
+                      "deyizhang2003@gmail.com",
                       style: TextStyle(fontSize: 15, color: Colors.black),
-                    )
-                  ],
+                    ),
+                  ),
                 ),
               ),
             ),
