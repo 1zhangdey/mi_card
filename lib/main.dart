@@ -15,7 +15,7 @@ class Myapp extends StatelessWidget {
             Center(
               child: CircleAvatar(
                 child: Image.network("https://i.stack.imgur.com/34AD2.jpg"),
-                backgroundColor: Colors.white,
+                backgroundColor: Colors.white10,
                 radius:30,
               ),
             ),
