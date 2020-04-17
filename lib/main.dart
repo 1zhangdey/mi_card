@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,14 +10,54 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(children: <Widget>[
+            Text(
+              "Deyi Zhang",
+              style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
+            ),
             Center(
               child: CircleAvatar(
-                child: Image.network("https://i.stack.imgur.com/34AD2.jpg"),
-                backgroundColor: Colors.white10,
-                radius:30,
+                backgroundImage: AssetImage("Images/Profile.jpg"),
+                radius: 50,
+              ),
+            ),
+            Text(
+              "HighSchool Student",
+              style: TextStyle(fontSize: 25, color: Colors.white),
+            ),
+            Center(
+              child: Container(
+                padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                color: Colors.white,
+                child: Row(
+                  children: <Widget>[
+                    Icon(Icons.add_location, size: 40),
+                    Text(
+                      "Milton Ontario, Canada",
+                      style: TextStyle(fontSize: 15, color: Colors.black),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(15),
+              child: Row(
+                children: <Widget>[
+                  Icon(
+                    Icons.add_circle,
+                  ),
+                  Text(
+                    "deyizhang2003@gmail.com",
+                    style: TextStyle(fontSize: 15, color: Colors.black),
+                  )
+                ],
               ),
             ),
           ]),
