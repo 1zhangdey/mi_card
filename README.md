@@ -1,5 +1,5 @@
 A static app emulating a business card
 
-![]("Images/Screenshot.png")
+![](Images/Screenshot.png)
 
 Built in Flutter
